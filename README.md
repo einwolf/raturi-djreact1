@@ -36,8 +36,15 @@ npm run watch
 
 ## Django urls
 
-http://127.0.0.1:8000/
+<http://127.0.0.1:8000/>
+
+<http://localhost:8000/default/>
+<http://localhost:8000/index1>
+<http://localhost:8000/index2>
 
 ## Nodejs urls
 
-http://127.0.0.1:8080/
+This is supposed to use django to run webpack to rebuild the assets js files.
+Running npm watch isn't required.
+
+<http://127.0.0.1:8080/>
