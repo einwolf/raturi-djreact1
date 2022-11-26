@@ -11,6 +11,7 @@ https://github.com/raturitechmedia/django-react-webpack
 ```bash
 # Django setup
 django-admin startproject djwebpack
+mkdir djwebpack/templates
 
 # Django dev
 python manage.py migrate
