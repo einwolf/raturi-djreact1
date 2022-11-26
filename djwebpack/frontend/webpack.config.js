@@ -15,7 +15,7 @@ var config = {
     },
     output: {
         path: path.join(__dirname, './assets/dist'),
-        filename: "[name]-[hash].js",
+        filename: "[name]-[fullhash].js",
         publicPath: '/static/dist/'
     },
 
@@ -23,7 +23,7 @@ var config = {
     plugins: [
         new BundleTracker({ filename: './webpack-stats.json' }),
     ],
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'eval-cheap-module-source-map',
     module: {
         rules: [
             {
@@ -51,9 +51,9 @@ var config = {
 }
 
 module.exports = (env, argv) => {
-
     if (argv.mode === 'production') {
-        config.devtool = 'none';
+        config.devtool = 'source-map';
     }
+    
     return config
 };

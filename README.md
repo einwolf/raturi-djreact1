@@ -30,21 +30,34 @@ npm install --save-dev webpack-cli webpack webpack-bundle-tracker
 npm install react react-dom react-scripts
 npm install @testing-library/jest-dom @testing-library/react @testing-library/user-event
 
-# Run nodejs in watch mode
+# Run nodejs in watch mode to rebuild files
+cd djwebpack/frontend
 npm run watch
+
+# Static build all bundles once
+cd djwebpack/frontend
+npm run build
 ```
 
 ## Django urls
 
 <http://127.0.0.1:8000/>
 
+Regular
+
 <http://localhost:8000/default/>
+<http://webstatusproj:8000/static/static_test.html>
+
+React
+
 <http://localhost:8000/index1>
 <http://localhost:8000/index2>
 
 ## Nodejs urls
 
-This is supposed to use django to run webpack to rebuild the assets js files.
-Running npm watch isn't required.
+It's supposed to server webpack bundles through django. Not like through webpack-build-server.
+
+The frontend/src and frontend/public probably came from create-react-app.
+The files aren't directly used by index1.html.
 
 <http://127.0.0.1:8080/>
