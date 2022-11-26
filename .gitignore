@@ -3,5 +3,4 @@ dist
 poetry.lock
 __pycache__
 *.pyc
-node_modules
 db.sqlite3
