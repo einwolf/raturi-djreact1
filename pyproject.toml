@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "raturi-djreact1"
+version = "0.1.0"
+description = ""
+authors = ["einwolf <36602061+einwolf@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "djwebpack"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2"
+djangorestframework = "^3.14.0"
+django-debug-toolbar = "^3.7.0"
+django-webpack-loader = "^1.7.0"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.5"
+yapf = "^0.32.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
